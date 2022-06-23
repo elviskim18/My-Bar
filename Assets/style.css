@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Kurale&family=Nunito:wght@200&family=Playfair+Display+SC&family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    
+}
+body{
+    background-color: #ced74d;
+}
+nav{
+    background-color: #ced74d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 50px;
+}
+
+
+nav i{
+    font-size: 2em;
+
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.navigation{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    width: 30vw;
+}
+.navigation input{
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    border-radius: 10px;
+}
+.navigation button{
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+}
+.container{
+    margin-left: 20px;
+    height: 80vh;
+    width: 65vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.title{
+    padding: 20px;
+}
+.subcontainer{
+    display: flex;
+    justify-content: space-around;
+    height: 71vh;
+    padding: 20px;
+}
+.img{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#image{
+    background-color:red;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+#like{
+    font-size: 2em;
+}
+.dInfo{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: space-around;
+}
+.dInfo p{
+    color: #5b5e06;
+    font-size: 1.2em;
+}
