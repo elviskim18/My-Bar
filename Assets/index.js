@@ -28,9 +28,10 @@ function appendElements(info){
 
        const image = document.getElementById('image')
        image.setAttribute("src",element.strDrinkThumb)
-       //console.log(element.strDrinkThumb)
        
-       console.log(element.strInstructions)
+       const description = document.getElementById('description')
+       description.textContent = element.strInstructions
+       
        console.log(element.strIngredient1)
        console.log(element.strIngredient2)
        console.log(element.strIngredient3)
