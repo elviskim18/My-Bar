@@ -96,7 +96,8 @@ nav i{
     border-radius: 50%;
 }
 #like{
-    font-size: 2em;
+    font-size: 1.0em;
+    color: #5b5e06;
 }
 #add{
     font-family: 'Italianno', cursive;
@@ -106,19 +107,24 @@ nav i{
 #glass{
     font-family: 'Nunito', sans-serif;
     color: #5b5e06;
+    font-size: medium;
 }
 #type{
     font-family: 'Nunito', sans-serif;
     color: #5b5e06;
+    font-size: medium;
     
 }
 #ingredients{
     font-family: 'Nunito', sans-serif;
     color: #5b5e06;
+    font-size: medium;
 }
 #description{
     font-family: 'Nunito', sans-serif;
     color: #5b5e06;
+    font-size: medium;
+
 }
 
 

@@ -70,6 +70,10 @@ function appendElements(info){
          ingSeven.textContent = element.strIngredient7;
          ingredientContainer.appendChild(ingSeven);
        }
+
+
+       //const EMPTY_HEART = '♡'
+       //const FULL_HEART = '♥'
       
 
     })
