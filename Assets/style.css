@@ -52,12 +52,34 @@ nav i{
 }
 .container{
     margin-left: 20px;
-    height: 80vh;
+    height: 320vh;
     width: 65vw;
     background-color: white;
     display: flex;
     flex-direction: column;
     border-radius: 20px;
+}
+#doth{
+    background-color: red;
+    height: 80vh;
+}
+#lookup{
+    background-color: orange;
+    height: 80vh;
+}
+#liquor{
+    background-color: black;
+    height: 80vh;
+}
+#nonliqour{
+    background-color: indigo;
+    height: 80vh;
+
+}
+#favs{
+    background-color: indianred;
+    height: 80vh;
+
 }
 .title{
     padding: 20px;
