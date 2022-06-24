@@ -18,9 +18,18 @@ function appendElements(info){
     info.forEach(element => {
        const name = document.getElementById('name')
        name.textContent = element.strDrink
-       console.log(element.strGlass)
-       console.log(element.strDrinkThumb)
-       console.log(element.strAlcoholic)
+
+       const glass = document.getElementById('glass')
+       glass.textContent = element.strGlass
+
+
+       const type = document.getElementById('type') 
+       type.textContent = element.strAlcoholic
+
+       const image = document.getElementById('image')
+       image.setAttribute("src",element.strDrinkThumb)
+       //console.log(element.strDrinkThumb)
+       
        console.log(element.strInstructions)
        console.log(element.strIngredient1)
        console.log(element.strIngredient2)

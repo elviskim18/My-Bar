@@ -83,13 +83,17 @@ nav i{
     font-size: 2.0em;
     color: #5b5e06;
 }
-#image{
-    background-color:red;
+.image{
     height: 400px;
     width: 400px;
     border-radius: 50%;
     margin-top: 20px;
     margin-bottom: 40px;
+}
+#image{
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
 }
 #like{
     font-size: 2em;
