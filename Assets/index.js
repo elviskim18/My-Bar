@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded',()=> {
     getDofDay();
 
-    //set alcoholic div display to hidden
+    //hide panels
     const liquo = document.querySelector("#pombe");
     liquo.style.display = "none"
 
@@ -27,8 +27,13 @@ document.addEventListener('DOMContentLoaded',()=> {
     document.querySelector('#nonalcoholic').addEventListener('click', () => {
         displayNonLiqour()
     })
+
     //search form eventlistener
     searchDrink()
+
+    
+
+    
     
 })
 
@@ -102,8 +107,35 @@ function appendElements(info){
        }
 
 
-       //const EMPTY_HEART = '♡'
-       //const FULL_HEART = '♥'
+       //like button event
+       const EMPTY_HEART = '♡'
+       const FULL_HEART = '♥'
+
+       document.querySelector('#like').addEventListener('click', (e) =>{
+        //DOM manipulation
+        const heart = e.target;
+        heart.innerHTML = EMPTY_HEART
+
+        if(heart.innerHTML === EMPTY_HEART){
+            heart.innerHTML == FULL_HEART;
+            heart.classList.add("activated-heart")
+            
+          }
+          else {
+            heart.innerHTML == EMPTY_HEART;
+            heart.classList.remove("activated-heart")
+          }
+        
+          //elements posted to the favourites tab
+        console.log(element.strDrink)
+        console.log(element.strDrinkThumb)
+        console.log(element.strAlcoholic)
+        console.log(element.strGlass)
+
+          
+
+    })
+
       
 
     })

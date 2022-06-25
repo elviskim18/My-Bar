@@ -56,7 +56,7 @@ nav i{
     margin-left: 20px;
     height: 409vh;
     width: 65vw;
-    background-color: black;
+    
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -126,8 +126,13 @@ nav i{
     border-radius: 50%;
 }
 #like{
-    font-size: 1.0em;
-    color: #5b5e06;
+    font-size: 1.5em;
+    font-weight: 600;
+    
+}
+.activated-heart{
+    color: red;
+
 }
 #add{
     font-family: 'Italianno', cursive;
