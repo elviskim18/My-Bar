@@ -28,6 +28,12 @@ document.addEventListener('DOMContentLoaded',()=> {
         displayNonLiqour()
     })
 
+    //eventlistener for favourites form
+    document.querySelector("#fav").addEventListener('click', () => {
+        displayFavs()
+    })
+    
+
     //search form eventlistener
     searchDrink()
 
@@ -243,10 +249,12 @@ function searchDrink(){
         
     })
         
-        
-    })
+      
+    }) 
+}
 
-    
-    
+function displayFavs(){
+    const favs = document.querySelector("#favs");
+    favs.style.display = "block"
 
 }
