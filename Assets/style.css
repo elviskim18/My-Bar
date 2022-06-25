@@ -231,14 +231,21 @@ nav i{
 }
 
 .scard{
-    height: 200px;
+    height: 260px;
     width: 170px;
     margin-bottom: 20px;
+    border: solid 1px black;
+    background-color: black;
+    border-radius: 15px;
+    text-align: center;
+
 }
 #simage{
     height: 200px;
     width: 170px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 .scard p{
-    color: red;
+    color: WHITE;
 }

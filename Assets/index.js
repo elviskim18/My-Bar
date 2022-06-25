@@ -5,15 +5,15 @@ document.addEventListener('DOMContentLoaded',()=> {
     const liquo = document.querySelector("#pombe");
     liquo.style.display = "none"
 
-    //set nonalcoholic div display to hidden
+    
     const nonliquo = document.querySelector("#sipombe");
     nonliquo.style.display = "none"
 
-    //set search form display to hidden
+    
     const lookUp = document.querySelector("#lookup");
     lookUp.style.display = "none"
 
-    //set favs div display to hidden
+    
     const favs = document.querySelector("#favs");
     favs.style.display = "none"
 
@@ -27,11 +27,9 @@ document.addEventListener('DOMContentLoaded',()=> {
     document.querySelector('#nonalcoholic').addEventListener('click', () => {
         displayNonLiqour()
     })
-    //serch form eventlistener
-    document.querySelector('#fsearch').addEventListener('submit', (e) =>{
-        e.preventDefault()
-        searchDrink(e.target.searchvalue.value)
-    })
+    //search form eventlistener
+    searchDrink()
+    
 })
 
 function getDofDay(){
@@ -171,9 +169,13 @@ function displayNonLiqour(){
 }
 
 //search function
-function searchDrink(enteredValue){
+function searchDrink(){
 
-    const myValue = enteredValue;
+    document.querySelector('#fsearch').addEventListener('submit', (e) =>{
+    e.preventDefault()
+    
+
+    const myValue = e.target.searchvalue.value;
     const dInfo = document.querySelector("#doth"); //make doth div invisible
     dInfo.style.display = "none"
 
@@ -183,22 +185,36 @@ function searchDrink(enteredValue){
     const card = document.createElement("div"); // create div to append created cards
     card.className = "scardContainer";
 
+    lookUp.innerHTML = ""   //clear previous search
+
     lookUp.appendChild(card)
     
-
+    
     fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${myValue}`)
     .then(res => res.json())
     .then(data => {
+        
         data.drinks.forEach(item =>{
+
             const newElement = document.createElement('div')
             newElement.className = "scard"
             newElement.innerHTML = `
             
             <img id = "simage" src= "${item.strDrinkThumb}" alt= "drink" >
-            <p>"${item.strDrink}"</p>
-            
+            <p>${item.strDrink}</p>
+            <p>${item.strAlcoholic}</p>
             `;
+            
             card.appendChild(newElement)
+            
         })
+        
     })
+        
+        
+    })
+
+    
+    
+
 }
