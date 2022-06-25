@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded',()=> {
     document.querySelector('#alcoholic').addEventListener('click', () => {
         displayLiqour()
     })
+
+    //eventlistener for nonalcoholic button
+    
 })
 
 function getDofDay(){
