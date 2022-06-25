@@ -71,6 +71,7 @@ nav i{
     background-color: orange;
     height: 80vh;
     margin-bottom: 20px;
+    
 }
 #pombe{
     background-color: red;
@@ -214,4 +215,30 @@ nav i{
     text-align: center;
     color: black;
     font-weight: 600;
+}
+.scardContainer{
+    width: 50vw;
+    height: 75vh;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    overflow: hidden;
+    overflow-y: auto;
+    
+}
+
+.scard{
+    height: 200px;
+    width: 170px;
+    margin-bottom: 20px;
+}
+#simage{
+    height: 200px;
+    width: 170px;
+}
+.scard p{
+    color: red;
 }

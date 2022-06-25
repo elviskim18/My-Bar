@@ -24,8 +24,13 @@ document.addEventListener('DOMContentLoaded',()=> {
     })
 
     //eventlistener for nonalcoholic button
-    document.querySelector('#nonalcoholic').addEventListener('click', () =>{
+    document.querySelector('#nonalcoholic').addEventListener('click', () => {
         displayNonLiqour()
+    })
+    //serch form eventlistener
+    document.querySelector('#fsearch').addEventListener('submit', (e) =>{
+        e.preventDefault()
+        searchDrink(e.target.searchvalue.value)
     })
 })
 
@@ -163,4 +168,37 @@ function displayNonLiqour(){
         })
     })
 
+}
+
+//search function
+function searchDrink(enteredValue){
+
+    const myValue = enteredValue;
+    const dInfo = document.querySelector("#doth"); //make doth div invisible
+    dInfo.style.display = "none"
+
+    const lookUp = document.querySelector("#lookup"); //make lookup div visible
+    lookUp.style.display = "block"
+
+    const card = document.createElement("div"); // create div to append created cards
+    card.className = "scardContainer";
+
+    lookUp.appendChild(card)
+    
+
+    fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${myValue}`)
+    .then(res => res.json())
+    .then(data => {
+        data.drinks.forEach(item =>{
+            const newElement = document.createElement('div')
+            newElement.className = "scard"
+            newElement.innerHTML = `
+            
+            <img id = "simage" src= "${item.strDrinkThumb}" alt= "drink" >
+            <p>"${item.strDrink}"</p>
+            
+            `;
+            card.appendChild(newElement)
+        })
+    })
 }
