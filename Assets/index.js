@@ -1,5 +1,27 @@
 document.addEventListener('DOMContentLoaded',()=> {
     getDofDay();
+
+    //set alcoholic div display to hidden
+    const liquo = document.querySelector("#pombe");
+    liquo.style.display = "none"
+
+    //set nonalcoholic div display to hidden
+    const nonliquo = document.querySelector("#sipombe");
+    nonliquo.style.display = "none"
+
+    //set search form display to hidden
+    const lookUp = document.querySelector("#lookup");
+    lookUp.style.display = "none"
+
+    //set favs div display to hidden
+    const favs = document.querySelector("#favs");
+    favs.style.display = "none"
+
+
+    //eventlistener for alcoholic button
+    document.querySelector('#alcoholic').addEventListener('click', () => {
+        displayLiqour()
+    })
 })
 
 function getDofDay(){
@@ -78,3 +100,37 @@ function appendElements(info){
 
     })
 }
+
+
+function displayLiqour(){
+    //get alcoholic drinks
+    const liquo = document.querySelector("#pombe");
+    liquo.style.display = "block"
+    const card = document.createElement("div");
+    card.className = "cardContainer";
+
+    liquo.appendChild(card)
+           
+
+    fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=Non_Alcoholic")
+    .then(res => res.json())
+    .then(drink => {
+        drink.drinks.forEach(item =>{
+            
+            const newElement = document.createElement('div')
+            newElement.className = "dcard"
+            newElement.innerHTML = `
+            
+            <img id = "dimage" src= "${item.strDrinkThumb}" alt= "drink" >
+            <p>"${item.strDrink}"</p>
+            
+            `;
+            card.appendChild(newElement)
+            
+        })
+    })
+    
+    
+
+}
+
