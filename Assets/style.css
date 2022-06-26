@@ -107,11 +107,20 @@ nav i{
     height: 80vh;
     margin-bottom: 20px;
 }
+#pombe h2{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Playfair Display SC', serif;
+}
 #sipombe{
     background-color: white;
     height: 80vh;
     margin-bottom: 20px;
-
+}
+#sipombe h2{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Playfair Display SC', serif;
 }
 #favs{
     background-color: white;
@@ -119,8 +128,11 @@ nav i{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
-
+}
+#favs h2{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Playfair Display SC', serif;
 }
 .title{
     padding: 20px;
