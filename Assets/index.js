@@ -134,12 +134,7 @@ function appendElements(info){
             alcoholType : element.strAlcoholic,
             alcoholGlass : element.strGlass
           }
-        //console.log(element.strDrink)
-        //console.log(element.strDrinkThumb)
-        //console.log(element.strAlcoholic)
-        //console.log(element.strGlass)
-        //console.log(newdata)
-
+        
         document.querySelector("#fav").addEventListener('click', () => {
             displayFavs(newdata)
         })
@@ -218,8 +213,8 @@ function searchDrink(){
     
 
     const myValue = e.target.searchvalue.value;
-    // const dInfo = document.querySelector("#doth"); //make doth div invisible
-    // dInfo.style.display = "none"
+     const dInfo = document.querySelector("#doth"); //make doth div invisible
+     dInfo.style.display = "none"
 
     const lookUp = document.querySelector("#lookup"); //make lookup div visible
     lookUp.style.display = "block"

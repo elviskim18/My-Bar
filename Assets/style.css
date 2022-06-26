@@ -38,7 +38,7 @@ nav i{
     flex-direction: column;
     padding: 50px;
     width: 30vw;
-    background-color: red;
+    
 }
 
 
@@ -67,6 +67,20 @@ nav i{
     list-style: none;
     text-align: center;
 }
+.navigation li a:link{
+    color: white;
+    text-decoration: none;
+}
+.navigation li a:hover{
+    color: #ced74d;
+}
+.navigation li a:visited{
+    color: GREY;
+}
+.navigation li a:active{
+    color: white;
+}
+
 .container{
     margin-left: 20px;
     height: 170vh;
@@ -283,6 +297,7 @@ nav i{
     margin-top: 20px;
     margin-left: 15px;
     
+    
 }
 #favimage{
     height: 200px;
@@ -293,5 +308,6 @@ nav i{
     font-weight: lighter;
     font-size: 2em;
     color:black;
+    padding: 3px;
 
 }
