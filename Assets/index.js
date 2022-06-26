@@ -260,10 +260,23 @@ function searchDrink(){
 function displayFavs(info){
     const favs = document.querySelector("#favs");
     favs.style.display = "block"
-    //console.log(info)
+    
 
     //display the fav to DOM
 
+    const favContainer = document.createElement('div');
+    favContainer.className = "favContainer"
+    favContainer.innerHTML = ""
+    favs.appendChild(favContainer);
+    //console.log(info.image)
+    favContainer.innerHTML = `
+    <img id = "favimage" src= "${info.image}" alt= "drink" >
+    <p>Name : ${info.name}</p>
+    <p>Glass : ${info.alcoholGlass}</p>
+    <p>Type : ${info.alcoholType}</p>
+
+
+    `
     
 
 }

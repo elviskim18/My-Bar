@@ -54,7 +54,7 @@ nav i{
 }
 .container{
     margin-left: 20px;
-    height: 409vh;
+    height: 170vh;
     width: 65vw;
     
     display: flex;
@@ -74,12 +74,12 @@ nav i{
     
 }
 #pombe{
-    background-color: red;
+    background-color: white;
     height: 80vh;
     margin-bottom: 20px;
 }
 #sipombe{
-    background-color: indigo;
+    background-color: white;
     height: 80vh;
     margin-bottom: 20px;
 
@@ -87,6 +87,7 @@ nav i{
 #favs{
     background-color: indianred;
     height: 80vh;
+    
 
 }
 .title{
@@ -253,4 +254,25 @@ nav i{
 }
 .scard p{
     color: WHITE;
+}
+
+.favContainer{
+    height: 400px;
+    width: 300px;
+    border: solid 10px black;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 15px;
+    
+}
+#favimage{
+    height: 200px;
+    width: 280px;
+}
+.favContainer p {
+    font-family: 'Italianno', cursive;
+    font-weight: lighter;
+    font-size: 2em;
+    color:black;
+
 }
