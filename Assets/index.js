@@ -218,8 +218,8 @@ function searchDrink(){
     
 
     const myValue = e.target.searchvalue.value;
-    const dInfo = document.querySelector("#doth"); //make doth div invisible
-    dInfo.style.display = "none"
+    // const dInfo = document.querySelector("#doth"); //make doth div invisible
+    // dInfo.style.display = "none"
 
     const lookUp = document.querySelector("#lookup"); //make lookup div visible
     lookUp.style.display = "block"
@@ -243,8 +243,8 @@ function searchDrink(){
             newElement.innerHTML = `
             
             <img id = "simage" src= "${item.strDrinkThumb}" alt= "drink" >
-            <p>${item.strDrink}</p>
-            <p>${item.strAlcoholic}</p>
+            <p>Name : ${item.strDrink}</p>
+            <p>Type: ${item.strAlcoholic}</p>
             `;
             
             card.appendChild(newElement)
