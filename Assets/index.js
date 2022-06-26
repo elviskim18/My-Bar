@@ -28,12 +28,7 @@ document.addEventListener('DOMContentLoaded',()=> {
         displayNonLiqour()
     })
 
-    //eventlistener for favourites form
-    document.querySelector("#fav").addEventListener('click', () => {
-        displayFavs()
-    })
     
-
     //search form eventlistener
     searchDrink()
 
@@ -133,12 +128,21 @@ function appendElements(info){
           }
         
           //elements posted to the favourites tab
-        console.log(element.strDrink)
-        console.log(element.strDrinkThumb)
-        console.log(element.strAlcoholic)
-        console.log(element.strGlass)
+          const newdata = {
+            name: element.strDrink,
+            image: element.strDrinkThumb,
+            alcoholType : element.strAlcoholic,
+            alcoholGlass : element.strGlass
+          }
+        //console.log(element.strDrink)
+        //console.log(element.strDrinkThumb)
+        //console.log(element.strAlcoholic)
+        //console.log(element.strGlass)
+        //console.log(newdata)
 
-          
+        document.querySelector("#fav").addEventListener('click', () => {
+            displayFavs(newdata)
+        })
 
     })
 
@@ -253,8 +257,13 @@ function searchDrink(){
     }) 
 }
 
-function displayFavs(){
+function displayFavs(info){
     const favs = document.querySelector("#favs");
     favs.style.display = "block"
+    //console.log(info)
+
+    //display the fav to DOM
+
+    
 
 }
