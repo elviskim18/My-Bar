@@ -12,15 +12,15 @@
 
 
 ## Screenshots
-Homepage
+HOMEPAGE
 ![image](/Assets/images/homepage.png)
-Favourite drinks tab
+FAVOURITE DRINK
 ![image](/Assets/images/favourite.png)
-Alcoholic drinks tab
+ALCOHOLIC DRINKS FILTER
 ![image](/Assets/images/alcoholic%20drinks.png)
-Non-alcoholic cocktails tab
+NON ALCOHOLIC DRINKS FILTER
 ![image](/Assets/images/nonalcoholic%20drinks.png)
-Search bar
+SEARCH BAR
 ![image](/Assets/images/searchbar.png)
 
 ## Table of content
@@ -52,20 +52,20 @@ languages used are:
 The site uses a public api to fetch details of cocktails . From the site a user can search for a specific cocktail. The result provides the user with instructions on how to make the said drinks and all the necessary ingredients needed
 
 ### Challenges
-My main challenge was posting the drink added to favourites tab.Currently when one adds a drink to the favourite tab it can be seen but when one reloads the page the drink dissapears. This is because I cant make feth POST request to the API. 
+My main challenge was posting the drink added to favourites tab. Currently when one adds a drink to the favourite tab it can be seen but when one reloads the page the drink dissapears. This is because I cant make fetch POST requests to the API. 
 
 *** 
 ## How to set up and run the project
 
 ### Requirements
 * 
-   - npm
-   -Text Editor
+npm
+Text Editor
    
 
-#### set up
+#### Set up
 clone the repo using the command
-- $git clone git@github.com:elviskim18/My-Bar.git
+- $git clone https://github.com/elviskim18/My-Bar.git
 change directory using command
 - $cd mybar
 - code .
@@ -79,7 +79,7 @@ change directory using command
 ***
 ## How to use the project
 
-the project root folder contains two files, main **index.html** and **README.md** file and one folder **assets folder**. Within the assests folder is one folder **images** which contains images files.There are also to other files, a **css** file which contains css used in the project and also  **js** file which provide the pages logic.
+The project root folder contains two files, main **index.html** and **README.md** file and one **assets folder**. Within the assests folder is one **images** folder which contains images files.There are also to other files, a **css** file which contains css used in the project and also  **js** file which provide the pages logic.
 ***
 ### Contributing to the project
 Fork the repo. Create a new branch in your terminal(git checkout -b improve-feature). Install the prerequisites. Make appropriate changes in file(s). Add the changes and commit them (git commit -am "improvements"). Push to the branch and create a pull request.
