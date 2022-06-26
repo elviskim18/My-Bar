@@ -116,6 +116,9 @@ nav i{
 #favs{
     background-color: white;
     height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     
 
 }
@@ -266,8 +269,8 @@ nav i{
 }
 
 .scard{
-    height: 290px;
-    width: 174px;
+    height: 680px;
+    width: 400px;
     margin-bottom: 20px;
     border: solid 2px black;
     background-color: black;
@@ -276,11 +279,10 @@ nav i{
 
 }
 #simage{
-    height: 200px;
-    width: 170px;
+    height: 300px;
+    width: 395px;
     border-radius: 12px;
-    /*border-top-right-radius: 15px;
-    border-top-left-radius: 15px;*/
+    
 }
 .scard p{
     color: #ced74d;
@@ -288,9 +290,15 @@ nav i{
     font-size: small;
     margin-top: 10px;
 }
+.scard ul li{
+    list-style: none;
+    color: white;
+    font-size: small;
+    font-family: 'Nunito', sans-serif;
+}
 
 .favContainer{
-    height: 400px;
+    height: 455px;
     width: 300px;
     border: solid 10px black;
     background-color: white;

@@ -32,7 +32,12 @@ document.addEventListener('DOMContentLoaded',()=> {
     //search form eventlistener
     searchDrink()
 
-    
+    //eventlistener for drink of the hour
+    document.querySelector('#dotd').addEventListener('click', () => {
+        const dInfo = document.querySelector("#doth"); //make doth div invisible
+        dInfo.style.display = "block"
+        getDofDay();
+    })
 
     
     
@@ -240,6 +245,14 @@ function searchDrink(){
             <img id = "simage" src= "${item.strDrinkThumb}" alt= "drink" >
             <p>Name : ${item.strDrink}</p>
             <p>Type: ${item.strAlcoholic}</p>
+            <ul>
+            <p>Ingredients:</p>
+            <li>${item.strIngredient1}</li>
+            <li>${item.strIngredient2}</li>
+            <li>${item.strIngredient3}</li>
+            </ul>
+            <p>Description: </p>
+            <ul><li>${item.strInstructions}</li></ul>
             `;
             
             card.appendChild(newElement)
