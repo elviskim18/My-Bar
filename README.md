@@ -58,9 +58,9 @@ My main challenge was posting the drink added to favourites tab. Currently when 
 ## How to set up and run the project
 
 ### Requirements
-* 
-npm
-Text Editor
+* npm
+* Text Editor
+
    
 
 #### Set up
